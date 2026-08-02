@@ -38,17 +38,21 @@ changes:
   - Added activity tracker resume function
   - Added additional checks for BT auto connect and block manually disconnected BT devices
   - Added additional compilation protections
+  - Added additional content information to Pickles menu
   - Added additional core string formatting
   - Added additional counters for diagnostic purposes
+  - Added additional element transition animations
   - Added additional glyphs to default theme
   - Added additional image support for box art images
   - Added additional network sanitisation for SSID and password strings
+  - Added additional performance markers for debug purposes
   - Added additional Pickles hotkeys
   - Added additional RGB support for Brick Pro
   - Added additional selection animations
   - Added additional shaders
   - Added additional Super Eagle texture filter
   - Added additional time notation options including custom
+  - Added adjustable dynamic rate control to Pickles audio subsystem
   - Added adjustable turbo system to Pickles
   - Added alpha, layer, and position animation theme option for better control
   - Added alternative colour files to default theme
@@ -97,6 +101,7 @@ changes:
   - Added BT scan timeout options to Advanced Options module
   - Added BT status glyph support
   - Added BT visual status glyph
+  - Added built-in core option defaults to Pickles
   - Added built-in theme volume and brightness indicators
   - Added built-in union storage file system support
   - Added cache buckets for skip list compilation
@@ -107,6 +112,7 @@ changes:
   - Added catalogue image caching
   - Added cheat support to Pickles
   - Added clearing of SDL controller mapping on module start
+  - Added collection and history actions with additional tag sorting
   - Added collection hash checking
   - Added colour feature to screensaver
   - Added colour filter and adjustment support to Pickles
@@ -118,11 +124,13 @@ changes:
   - Added connectivity checks for connection menu availability
   - Added const to colour filter, shader, and tag modules
   - Added content "Stage Overlay" toggle to Advanced Options module
+  - Added content audio stability check for governor swap
   - Added content explorer forward history
   - Added content loading mount fallback to help with union migration
   - Added content overlay option field parsing
   - Added content pausing hotkey to Pickles
   - Added content peek to Pickles
+  - Added content sort mode module
   - Added continuous BT scanning when module is open
   - Added controller and port remap and turbo system for Pickles
   - Added core viewport configuration to Pickles
@@ -141,6 +149,7 @@ changes:
   - Added default selection animation and speed
   - Added default variable for video wallpaper
   - Added delay time for long label before scroll
+  - Added Departure Mono font option
   - Added deprecation warning when using a compiled <code>.bin</code> font
   - Added device battery curve parameters
   - Added device battery size and voltage lines
@@ -156,6 +165,7 @@ changes:
   - Added dynamic buffered scan lines
   - Added ellipsis check on labels for scroll mode
   - Added ellipsis support to dropdown option fields
+  - Added even item peek opacity
   - Added external emulator launch for Mustard Terminal
   - Added extraction polling for theme downloads
   - Added fade bounce animation for dialogues
@@ -185,6 +195,7 @@ changes:
   - Added glyphs to default theme
   - Added glyph support to Pickles FPS, fast forward, and slow motion indicators
   - Added GPU hard sync to bypass GL swap frame queue
+  - Added GPU sync to CPU governor switch
   - Added gradient dithering cache
   - Added header title visibility option
   - Added header visibility configuration to Pickles
@@ -225,10 +236,13 @@ changes:
   - Added Mustard Terminal application
   - Added Mustard Terminal detection function
   - Added native resolution and shader smoothing to overlay rendering
+  - Added network capability check for Pickles
   - Added network configuration wait and connection confirmation
   - Added network information export
   - Added network interface name validation before shell command use
   - Added network module scan settle
+  - Added Network Play and RetroAchievement support to Pickles
+  - Added Network Play screensaver suppression
   - Added network proxy support
   - Added network scanning bounce progress bar
   - Added old network profile migration
@@ -243,8 +257,11 @@ changes:
   - Added passcode configuration module
   - Added pass code reset to factory init
   - Added path safety validation to content browsing modules
+  - Added performance boosting during demanding operations
+  - Added performance profile preset
   - Added Pickles data archival script
   - Added Pickles overlay support
+  - Added Pickles performance and user experience reporting
   - Added Pickles suspend and resume support
   - Added PICO-8 double extension removal
   - Added PipeWire "Audio Suspend" toggle to Advanced Options module
@@ -269,7 +286,9 @@ changes:
   - Added random name generation to save state and macro creation
   - Added random name generator
   - Added raw framebuffer image splash system
+  - Added Relish advanced macro system to Pickles
   - Added render path checking and reset functions to overlay stage
+  - Added RetroAchievement content hash calculation
   - Added Retroarch for Vita Pro
   - Added retry and fallback modes for controller input
   - Added reusable grid descriptor buffers and cached grid cell shadow style
@@ -313,6 +332,7 @@ changes:
   - Added specific content options module and box art scale mode
   - Added specific debug mode evaluator for logging purposes
   - Added specific device support for terminal configuration
+  - Added specific GLES rendering support for cores that require it
   - Added specific profile loading for network
   - Added SRAM backup and validation restore
   - Added SSID scanning to all network configurations
@@ -345,6 +365,7 @@ changes:
   - Added text notification support to stage overlay system
   - Added textual notification support in overlay system
   - Added theme based glyph resizing for individual fields
+  - Added themed messages while content starts, resumes and restarts
   - Added theme scheme cache
   - Added timeline based saves to Pickles
   - Added timeline save protection to Pickles
@@ -357,8 +378,9 @@ changes:
   - Added video wallpaper and additional image support
   - Added video wallpaper screensaver
   - Added video wallpaper support for install module
-  - Added viewport crop centering
+  - Added viewport crop centring
   - Added viewport cropping
+  - Added viewport stretch to Pickles
   - Added Vita Pro to supported board list
   - Added volume ramping function
   - Added windowed list rendering to prevent unbounded object creation on large lists
@@ -409,6 +431,7 @@ changes:
   - Ensure network module is loaded and initialised before BT
   - Ensure network returns actual status codes
   - Ensure pending changes are detected when traversing child sub menus
+  - Ensure Pickles core audio of 48khz fallback to 44.1khz
   - Ensure progress bars last value is reset as to not block new progress markers
   - Ensure that a blank image preview also resets previous path
   - Ensure video wallpaper stops between modules if not using global video
@@ -437,6 +460,7 @@ changes:
   - Fixed audio balance with overdrive calculation
   - Fixed audio finalising for audio initialisation
   - Fixed Audio Output sink sync
+  - Fixed audio rate buffering on resume
   - Fixed audio sink selection on boot and BT device change
   - Fixed battery overlay removal on low power change
   - Fixed boot logo theme updating for RG28XX devices
@@ -457,6 +481,7 @@ changes:
   - Fixed combo call for kiosk settings access
   - Fixed comparison check memory leak
   - Fixed console mode audio swap detection
+  - Fixed content explorer folder as content detection
   - Fixed content folder item count
   - Fixed content navigation inconsistencies between grid and list views
   - Fixed content option navigation sound trigger on back
@@ -476,6 +501,7 @@ changes:
   - Fixed device field macro slow memory leak
   - Fixed device light selection and added kiosk setting
   - Fixed dialogue menu with saving colour filters and shaders
+  - Fixed dialogue navigation hold press
   - Fixed disappearing list item due to odd numbers
   - Fixed disc images (m3u, gdi, and cue) hidden in Content Explorer
   - Fixed divide by zero brightness integer returns
@@ -509,6 +535,8 @@ changes:
   - Fixed grid item visibility and adjustment on scroll
   - Fixed grid navigation crash in application module
   - Fixed grid row calculation when column count is zero
+  - Fixed hardware rendering causing fast forward slowdowns
+  - Fixed header additional glyph icon show
   - Fixed header glyph icon load priority
   - Fixed header glyph size
   - Fixed help display on Vita Pro device
@@ -520,6 +548,7 @@ changes:
   - Fixed image cache invalidated from background extraction thread
   - Fixed image refresh on zero content crash
   - Fixed image source loading safety
+  - Fixed incorrect colours in screenshots, rotated games and mirrored games
   - Fixed incorrect root path loading for content explorer module
   - Fixed incorrect TrimUI brick input mapping
   - Fixed input mapping layout switch
@@ -528,6 +557,7 @@ changes:
   - Fixed input tester string being too long
   - Fixed integer zoom scaling
   - Fixed issue displaying content directory options
+  - Fixed item peek for even number lists
   - Fixed language download polling refresh
   - Fixed language font selection on languages with specific internal fonts
   - Fixed last and resume game script
@@ -583,8 +613,10 @@ changes:
   - Fixed picker deletion
   - Fixed picker module using old deletion method
   - Fixed Pickles archive support for direct VFS streaming
+  - Fixed Pickles audio pacing and resume state
   - Fixed Pickles content restart
   - Fixed Pickles fast forward and rewind support
+  - Fixed Pickles port assignment for various core sessions
   - Fixed Pickles rotation setting
   - Fixed Pickles save state loading and saving
   - Fixed PipeWire audio amplifier "pop" when waking from audio suspend
@@ -595,6 +627,7 @@ changes:
   - Fixed PPSSPP application missing XDG path set
   - Fixed preview video not disappearing
   - Fixed previous selection for BT item
+  - Fixed queued screenshot write for RetroAchievements
   - Fixed random silent navigation in specific modules
   - Fixed rare internal overlay image corruption
   - Fixed rare screensaver dismiss deadlock
@@ -619,8 +652,11 @@ changes:
   - Fixed screen resolution fallback to 640x480
   - Fixed screensaver exit returning on all enabled modes
   - Fixed screensaver preview and speed issue
+  - Fixed screenshot rendering blink
   - Fixed screenshot shadow issue and added single use dialogue box
+  - Fixed scroll position on large lists
   - Fixed selected font for themes and proper font fallback to internal Noto Sans
+  - Fixed serial based RGB light system
   - Fixed session settings for Pickles submenu save
   - Fixed several small memory leaks with function calls
   - Fixed shell injection risk in network info
@@ -629,6 +665,7 @@ changes:
   - Fixed single stick RGB setting
   - Fixed singular INI section deletion
   - Fixed small texture rendering for overlapping elements
+  - Fixed sorting crash on NULL assign folders
   - Fixed specific core rendering for different pixel formats
   - Fixed stage overlay code cleanup during frontend compilation
   - Fixed status bar alpha and colour mixing
@@ -640,6 +677,7 @@ changes:
   - Fixed sunrise init script runner
   - Fixed sunrise schedule runner
   - Fixed sunrise sunset temp calculation
+  - Fixed suspend save state for Pickles
   - Fixed swap creation by checking if swap exists first
   - Fixed swapped menu/select in PPSSPP for TrimUI Brick
   - Fixed system and core logged message output
@@ -671,6 +709,7 @@ changes:
   - Fixed user init script execution
   - Fixed variable array boundary for <code>run_exec</code> and added empty argument guards
   - Fixed vertical navigation in Pickles sub menus
+  - Fixed VFS issues for resolving paths within archive context
   - Fixed video wallpaper jitters by adding stream clamping
   - Fixed Vita Pro volume input mapping
   - Fixed volume limit setting with overdrive enabled
@@ -682,8 +721,10 @@ changes:
   - General GPU and code refactor
   - Hardened archive extraction path traversal
   - Improved collection, history, and tag detection speed for content
+  - Improved performance reporting and testing
   - Improved Pickles core hot path loading
   - Improved Pickles hash validation and cache management
+  - Improved rumble support and added a little treat
   - Increased audio sink attempts for BT timeout
   - Increased hotkey combo limit to fix RG40 and RGCUBE volume buttons
   - Lowered device max voltage battery calibration
@@ -697,12 +738,14 @@ changes:
   - Modified audio sink to refresh regardless of state
   - Modified battery capacity to user controlled device voltage lines
   - Modified build flags to enable stack protection and ASLR support
+  - Modified button mapping to utilise all buttons and axis methods
   - Modified capitalisation function to use awk process
   - Modified charging module to cache hall key and blank status
   - Modified charging module to wake screen with any button
   - Modified chrony to restart in background after network init
   - Modified console logging to alleviate stuttering on TrimUI devices
   - Modified content options with split detail and info views
+  - Modified controller system with DualShock default for supported PS1 cores
   - Modified core assignment to select previous chosen core and system
   - Modified danger combo to hold press
   - Modified debug logging with standard and verbose options
@@ -730,6 +773,7 @@ changes:
   - Modified input to refer back to primary instance for specific inputs
   - Modified input to use board special functions
   - Modified internal log copying to debug mode only
+  - Modified LED control change to background on startup
   - Modified logging process to use new arborist module
   - Modified low power to use global idle file
   - Modified main menu launch to select first item instead of reloading whole module
@@ -768,12 +812,14 @@ changes:
   - Modified volume logic with values going directly to PipeWire even with overdrive
   - Moved <code>safe_atoi</code> to common share with fallback and inline static
   - Moved ALSA mixer reset into the foreground so it actually behaves when asked
+  - Moved array size define into stage overlay commons
   - Moved battery watchdog to top of startup
   - Moved BT suspend routine out of module down
   - Moved colour options to singular display temperature with schedule
   - Moved Console Mode detection to common
   - Moved content directory reference to global define
   - Moved content search to SELECT button
+  - Moved default CPU governor from <code>ondemand</code> to <code>schedutil</code>
   - Moved device and mount startup earlier in process
   - Moved handheld mode and brightness restore to own init script
   - Moved hold button modifier to input system
@@ -801,6 +847,7 @@ changes:
   - Optimised content explorer with grouped filtered list with bsearch implementation
   - Optimised content options module with better info view
   - Optimised content search JSON processing
+  - Optimised content starting, restarting and save loading
   - Optimised device module load to only run module dependency if required
   - Optimised dialogue transition animations
   - Optimised display stage memory buffering
@@ -808,10 +855,12 @@ changes:
   - Optimised download processes
   - Optimised duplicated common grid functions
   - Optimised emulator extraction on device startup
+  - Optimised ES2 and ES3 state rendering for Pickles
   - Optimised explore content loading by removing redundant cache and per file stat calls
   - Optimised extraction script with verbose messages
   - Optimised font loading to reduce duplicated code
   - Optimised frontend and content launch scripts
+  - Optimised GLES3 FB drawing and added software render toggle
   - Optimised global function list
   - Optimised glyph loading with shared image embed helper
   - Optimised grid descriptor allocation by reusing memory
@@ -822,7 +871,9 @@ changes:
   - Optimised item navigation and temporarily remove fancy animations
   - Optimised language based font cache
   - Optimised list navigation item regeneration
+  - Optimised logging system
   - Optimised lookup table structure
+  - Optimised macro functionality and improved the relish system
   - Optimised memory usage by removing <code>strdup</code> allocations, as much as possible
   - Optimised mount startup by waiting for SD1 and SD2 mounting only
   - Optimised network profile name normalisation and guard path names
@@ -831,8 +882,10 @@ changes:
   - Optimised SDL output for larger resolution devices
   - Optimised setting save routine
   - Optimised shader fragments
+  - Optimised skip list and union list builders
   - Optimised skip pattern loading with lazy first initialisation
   - Optimised SSID search to hopefully weed out hidden network listing
+  - Optimised starfield screensaver random integer drift
   - Optimised static route network connections
   - Optimised storage mount by reusing block identification
   - Optimised storage mount with future filesystem support
@@ -844,11 +897,13 @@ changes:
   - Optimised variable get and set functions
   - Optimised video previews and wallpapers on separate threads
   - Reduced content options repeated code
+  - Reduced controller delay and improved audio stability
   - Reduced default BT first time scan timeout
   - Reduced extension strips in favour of inline replacement
   - Reduced function parsing for PipeWire init
   - Reduced halt script kill wait timer
   - Reduced memory usage for JSON reading during directory scanning
+  - Reduced the effect of menus and overlays on game performance
   - Reduced thread and timer overhead by consolidating status timers into a singular task
   - Reduced udev timeout on settle
   - Refactored content explorer to rebuild instead of reload
@@ -864,6 +919,7 @@ changes:
   - Removed device specific lid process
   - Removed dialogue close animation to reduce dialogue ghosting
   - Removed disk information from fast fetch as it sometimes reduced loading
+  - Removed display double buffer expect check
   - Removed double confirm sound trigger on history collect
   - Removed duplicated glyph path resolution logic
   - Removed grid glyphs from default theme
@@ -886,8 +942,10 @@ changes:
   - Removed union storage name condition in search results
   - Removed unused dialogue save functions
   - Renamed Console Mode file path checking
+  - Renamed content type ENUM with prefix callers
   - Renamed custom fonts to internal fonts
   - Renamed default theme options glyphs
+  - Renamed function strings to be a bit more clear
   - Renamed HDMI force refresh function name
   - Renamed specific translate define for elements
   - Renamed unused nothing parameter to <code>auto_assign</code> for consistency
@@ -904,6 +962,7 @@ changes:
   - Replaced strtok with strtok_r to eliminate state corruption
   - Reused existing string trim function for battery info
   - Reused existing string trim function for colour temp
+  - Reversed first open ternary function for better readability
   - Reversed hex input keyboard mapping
   - Reverted back to BT ondemand scanning
   - Reverted back to previous action processing method
@@ -966,6 +1025,7 @@ changes:
   - Updated network module path for TrimUI devices
   - Updated network module script call path
   - Updated network script with proxy support
+  - Updated Pickles rendering information
   - Updated PPSSPP support for Vita Pro
   - Updated preinstalled themes
   - Updated recursive core assignment for future folder
