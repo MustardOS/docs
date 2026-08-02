@@ -42,12 +42,11 @@ changes:
   - Added additional core string formatting
   - Added additional counters for diagnostic purposes
   - Added additional element transition animations
-  - Added additional glyphs to default theme
   - Added additional image support for box art images
   - Added additional network sanitisation for SSID and password strings
   - Added additional performance markers for debug purposes
   - Added additional Pickles hotkeys
-  - Added additional RGB support for Brick Pro
+  - Added additional RGB support
   - Added additional selection animations
   - Added additional shaders
   - Added additional Super Eagle texture filter
@@ -56,10 +55,9 @@ changes:
   - Added adjustable turbo system to Pickles
   - Added alpha, layer, and position animation theme option for better control
   - Added alternative colour files to default theme
-  - Added amplifier initialisation for Vita Pro device
+  - Added amplifier initialisation
   - Added async startup script loader
-  - Added atomic temp file writes for all persistent config and state files
-  - Added atomic writes for persistent config to prevent corruption on power loss
+  - Added atomic writes for persistent configuration and state files to help prevent corruption on power loss
   - Added attribute cache to GLES state
   - Added audio mixer reset on all muX modules as a safeguard
   - Added audio period setting (128-2048)
@@ -82,7 +80,6 @@ changes:
   - Added battery function to global functions
   - Added battery text information to visual option
   - Added battery usage tracker scripts
-  - Added battery watchdog to startup process
   - Added best network profile selection
   - Added better frameskip processing for fast forward and slow motion
   - Added bind mounted storage support for Pickles
@@ -100,7 +97,6 @@ changes:
   - Added BT scanning and connection locks
   - Added BT scan timeout options to Advanced Options module
   - Added BT status glyph support
-  - Added BT visual status glyph
   - Added built-in core option defaults to Pickles
   - Added built-in theme volume and brightness indicators
   - Added built-in union storage file system support
@@ -146,7 +142,7 @@ changes:
   - Added default battery curves to devices
   - Added default font defines
   - Added default Mustard Terminal configuration
-  - Added default selection animation and speed
+  - Added configurable selection animations and speed controls
   - Added default variable for video wallpaper
   - Added delay time for long label before scroll
   - Added Departure Mono font option
@@ -161,7 +157,7 @@ changes:
   - Added digital analog switch hotkey
   - Added disc ejecting system to multi-disc content
   - Added double buffering option to advanced settings
-  - Added DRM capture priming for Vita Pro screenshot grab
+  - Added DRM capture priming for screenshot grab
   - Added dynamic buffered scan lines
   - Added ellipsis check on labels for scroll mode
   - Added ellipsis support to dropdown option fields
@@ -275,7 +271,6 @@ changes:
   - Added preinstalled custom TTF fonts and language based Noto Sans fonts
   - Added preliminary BT module support
   - Added preliminary shader support for GLES based content
-  - Added preliminary support for TrimUI Brick Pro
   - Added profile selection status
   - Added progress bar bounce to content search module
   - Added proper muhotkey clean up handling for signal based exits
@@ -289,7 +284,6 @@ changes:
   - Added Relish advanced macro system to Pickles
   - Added render path checking and reset functions to overlay stage
   - Added RetroAchievement content hash calculation
-  - Added Retroarch for Vita Pro
   - Added retry and fallback modes for controller input
   - Added reusable grid descriptor buffers and cached grid cell shadow style
   - Added RGBA texture upload in overlay system
@@ -336,7 +330,7 @@ changes:
   - Added specific profile loading for network
   - Added SRAM backup and validation restore
   - Added SSID scanning to all network configurations
-  - Added stage overlay optional support for external cores
+  - Added optional stage overlay support for external cores
   - Added stage working function for easier hot reloading in overlay system
   - Added stall detection to curl downloads to abort hung transfers
   - Added status timer tick offsets
@@ -363,7 +357,6 @@ changes:
   - Added text file manual support to catalogue
   - Added text manual reading support to Pickles
   - Added text notification support to stage overlay system
-  - Added textual notification support in overlay system
   - Added theme based glyph resizing for individual fields
   - Added themed messages while content starts, resumes and restarts
   - Added theme scheme cache
@@ -379,9 +372,8 @@ changes:
   - Added video wallpaper screensaver
   - Added video wallpaper support for install module
   - Added viewport crop centring
-  - Added viewport cropping
+  - Added viewport crop tools
   - Added viewport stretch to Pickles
-  - Added Vita Pro to supported board list
   - Added volume ramping function
   - Added windowed list rendering to prevent unbounded object creation on large lists
   - Added WirePlumber compatibility configurations
@@ -419,7 +411,7 @@ changes:
   - Disabled terminal cursor blinking on boot
   - Disabled vtcon framebuffer and cursor blink
   - Eliminated heap allocations in language translation paths
-  - Enabled external content stage overlay support
+  - Ensure audio PCM is not adjusting during audio mixer reset
   - Ensure BT device removal does not affect other paired devices
   - Ensure connection status is refreshed and not using stale information
   - Ensure content extraction is cleared on quit
@@ -435,7 +427,6 @@ changes:
   - Ensure progress bars last value is reset as to not block new progress markers
   - Ensure that a blank image preview also resets previous path
   - Ensure video wallpaper stops between modules if not using global video
-  - Ensure Vita Pro PCM is not adjusting during audio mixer reset
   - Ensure we always update the default MustardOS theme on SD2
   - Ensure we always use a correct game controller file
   - Ensure we exit early for factory reset checks
@@ -486,7 +477,6 @@ changes:
   - Fixed content navigation inconsistencies between grid and list views
   - Fixed content option navigation sound trigger on back
   - Fixed content options navigation lockup when swapping between option and info
-  - Fixed content options navigation sound
   - Fixed controller state reset on active layout remap switch
   - Fixed correct format when generating boot logo
   - Fixed corrupted tiled images when SVG glyphs were upscaled
@@ -517,12 +507,11 @@ changes:
   - Fixed false detection of invalid theme resolution
   - Fixed first install screensaver trigger
   - Fixed first item truncated label scrolling
-  - Fixed first navigation sound on new modules
   - Fixed first time installation routine
   - Fixed focus returning to previous content directory
   - Fixed folder path restore on content quit
   - Fixed font cache clearing on changing style and size
-  - Fixed font defaults looking at existing theme scheme for size
+  - Fixed theme font defaults by using the existing scheme size
   - Fixed font memory recall issue
   - Fixed font navigation sound switch
   - Fixed font revert when not saving changes
@@ -539,7 +528,6 @@ changes:
   - Fixed header additional glyph icon show
   - Fixed header glyph icon load priority
   - Fixed header glyph size
-  - Fixed help display on Vita Pro device
   - Fixed help message crash in search module
   - Fixed hidden content setting for union
   - Fixed history item removal and leftover language values
@@ -610,8 +598,7 @@ changes:
   - Fixed passcode font context crash
   - Fixed passcode length comparison
   - Fixed passcode previous selection
-  - Fixed picker deletion
-  - Fixed picker module using old deletion method
+  - Fixed the picker module using its old deletion method
   - Fixed Pickles archive support for direct VFS streaming
   - Fixed Pickles audio pacing and resume state
   - Fixed Pickles content restart
@@ -644,11 +631,10 @@ changes:
   - Fixed reversed XY buttons for Drastic Advanced on TrimUI Brick
   - Fixed RGB left and right analogue static zone colours
   - Fixed RGB Lights UI
-  - Fixed rotation for Vita Pro screenshots
+  - Fixed rotation for screenshots
   - Fixed rumble on content close
   - Fixed save state and macro OSK confusion
   - Fixed save state serial buffering
-  - Fixed saving item to collections from content explorer
   - Fixed screen resolution fallback to 640x480
   - Fixed screensaver exit returning on all enabled modes
   - Fixed screensaver preview and speed issue
@@ -688,9 +674,8 @@ changes:
   - Fixed theme download catalogue name path traversal check
   - Fixed theme download progress and extraction freezing on spam inputs
   - Fixed theme filter menu
-  - Fixed theme font defaults
   - Fixed threaded video saving on symlink
-  - Fixed touch screen affecting screen idle and suspend on Vita Pro
+  - Fixed touch screen affecting screen idle and suspend
   - Fixed transition box art not visible on collection and history modules
   - Fixed TrimUI Brick brightness mapping
   - Fixed TrimUI Brick RetroArch input
@@ -711,7 +696,7 @@ changes:
   - Fixed vertical navigation in Pickles sub menus
   - Fixed VFS issues for resolving paths within archive context
   - Fixed video wallpaper jitters by adding stream clamping
-  - Fixed Vita Pro volume input mapping
+  - Fixed volume input mapping
   - Fixed volume limit setting with overdrive enabled
   - Fixed wallpaper embedding cache
   - Fixed wallpaper rendering during content even if blank
@@ -751,9 +736,7 @@ changes:
   - Modified debug logging with standard and verbose options
   - Modified default font shadow values
   - Modified default global config variables
-  - Modified default selection animation and speed
   - Modified default vTree right pane to SD1
-  - Modified device and mount startup scripts to init system
   - Modified display functionality to obtain sysfs backlight first with fallback
   - Modified DVD screensaver to hopefully reduce frontend fighting
   - Modified GLES texture preparation in overlay system
@@ -799,7 +782,6 @@ changes:
   - Modified sound values for extra dB boost
   - Modified splash visibility time
   - Modified startup script to reduce logging for disabled functions
-  - Modified startup script to start battery watchdog before charge module
   - Modified suspend to load all modules and wait for network reconnect
   - Modified system information to display multiple CPU models
   - Modified terminal application to use specific size font and font hint
@@ -808,19 +790,19 @@ changes:
   - Modified timezone to separate region and city selection
   - Modified TrimUI device input daemon
   - Modified union scanning to reduce repeated work
-  - Modified Vita Pro default display path
+  - Modified default display path
   - Modified volume logic with values going directly to PipeWire even with overdrive
   - Moved <code>safe_atoi</code> to common share with fallback and inline static
   - Moved ALSA mixer reset into the foreground so it actually behaves when asked
   - Moved array size define into stage overlay commons
-  - Moved battery watchdog to top of startup
+  - Moved the battery watchdog to the top of startup, before the charge module
   - Moved BT suspend routine out of module down
   - Moved colour options to singular display temperature with schedule
   - Moved Console Mode detection to common
   - Moved content directory reference to global define
   - Moved content search to SELECT button
   - Moved default CPU governor from <code>ondemand</code> to <code>schedutil</code>
-  - Moved device and mount startup earlier in process
+  - Moved device and mount initialisation earlier in startup
   - Moved handheld mode and brightness restore to own init script
   - Moved hold button modifier to input system
   - Moved input remap variable
@@ -964,9 +946,8 @@ changes:
   - Reused existing string trim function for colour temp
   - Reversed first open ternary function for better readability
   - Reversed hex input keyboard mapping
-  - Reverted back to BT ondemand scanning
   - Reverted back to previous action processing method
-  - Reverted BT scan back to on-demand scanning
+  - Reverted Bluetooth scanning to on-demand mode
   - Reverted theme compatibility
   - Reverted to modprobe for TUI network module
   - Reverted to MP4 only for video previews
@@ -1009,7 +990,7 @@ changes:
   - Updated extra download JSON reference
   - Updated fast fetch logo
   - Updated font sizes for default theme
-  - Updated GameControllerDB references for Brick Pro
+  - Updated GameControllerDB references
   - Updated grid view to correctly size SVG glyphs to fit within cells
   - Updated hotkey runners to use MENU input
   - Updated how theme RGB settings are applied
@@ -1024,24 +1005,16 @@ changes:
   - Updated network configuration restore script
   - Updated network module path for TrimUI devices
   - Updated network module script call path
-  - Updated network script with proxy support
   - Updated Pickles rendering information
-  - Updated PPSSPP support for Vita Pro
   - Updated preinstalled themes
   - Updated recursive core assignment for future folder
-  - Updated RetroArch controls for Brick Pro
   - Updated Retroarch mappings
   - Updated RGB controller with language strings
-  - Updated RGB controller with vita ADC Joypad support
-  - Updated RGB settings for default theme
   - Updated screenshot tool path
   - Updated scripts to use DPAD swap and hall key device values
   - Updated script verification hashes
   - Updated ScummVM to 2026.2.0
   - Updated SDL IDs for TrimUI Smart Pro
-  - Updated shader fragments
-  - Updated supporter credits media
   - Updated supporter credits music
   - Updated terminal script location paths
   - Updated testing watermark
-  - Updated Vita Pro config and control variables
